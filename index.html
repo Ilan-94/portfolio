@@ -21,6 +21,12 @@
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
+            slate: {
+              750: '#293548',
+              850: '#172033',
+              900: '#0f172a',
+              950: '#0b1120',
+            },
             emerald: {
               400: '#34d399',
               500: '#10b981',
@@ -42,17 +48,17 @@
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 min-h-screen antialiased selection:bg-emerald-600 selection:text-white">
+<body class="bg-slate-900 text-slate-100 min-h-screen antialiased selection:bg-emerald-600 selection:text-white">
 
   <!-- Header / Top Bar façon réseau social -->
-  <header class="sticky top-0 z-50 bg-zinc-950/85 backdrop-blur-md border-b border-zinc-850 px-4 lg:px-8 py-3">
+  <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-4 lg:px-8 py-3">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-3">
         <a href="#" class="flex items-center gap-2">
-          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center font-extrabold text-white shadow-lg shadow-emerald-950/40">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center font-extrabold text-white shadow-md shadow-emerald-950/40">
             <i class="fa-solid fa-terminal text-sm"></i>
           </div>
-          <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-zinc-200 to-emerald-400 bg-clip-text text-transparent">
+          <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-emerald-400 bg-clip-text text-transparent">
             DevNet<span class="text-emerald-400">.io</span>
           </span>
         </a>
@@ -62,21 +68,21 @@
       </div>
 
       <!-- Barre de recherche sobre -->
-      <div class="hidden md:flex items-center gap-2 bg-zinc-900 border border-zinc-800 rounded-full px-4 py-1.5 text-xs text-zinc-400 w-72 focus-within:border-emerald-500 transition-colors">
-        <i class="fa-solid fa-magnifying-glass text-zinc-500"></i>
-        <input type="text" placeholder="Rechercher: Active Directory, Debian, VMware..." class="bg-transparent border-none outline-none w-full text-zinc-200 placeholder:text-zinc-500 font-sans" />
+      <div class="hidden md:flex items-center gap-2 bg-slate-800/80 border border-slate-700/70 rounded-full px-4 py-1.5 text-xs text-slate-300 w-72 focus-within:border-emerald-500 transition-colors">
+        <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
+        <input type="text" placeholder="Rechercher: Active Directory, Debian, VMware..." class="bg-transparent border-none outline-none w-full text-slate-200 placeholder:text-slate-400 font-sans" />
       </div>
 
       <!-- Quick actions -->
       <div class="flex items-center gap-3">
-        <a href="mailto:oufella.ilan@gmail.com" class="p-2 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-full transition-colors relative" title="Envoyer un message">
+        <a href="mailto:oufella.ilan@gmail.com" class="p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-full transition-colors relative" title="Envoyer un message">
           <i class="fa-solid fa-paper-plane text-sm"></i>
-          <span class="w-2 h-2 rounded-full bg-emerald-400 absolute top-1.5 right-1.5 ring-2 ring-zinc-950"></span>
+          <span class="w-2 h-2 rounded-full bg-emerald-400 absolute top-1.5 right-1.5 ring-2 ring-slate-900"></span>
         </a>
-        <a href="tel:0752887624" class="p-2 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-full transition-colors" title="Téléphone">
+        <a href="tel:0752887624" class="p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-full transition-colors" title="Téléphone">
           <i class="fa-solid fa-phone text-sm"></i>
         </a>
-        <a href="#posts" class="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full text-xs font-semibold shadow-md shadow-emerald-950/50 transition-all flex items-center gap-1.5">
+        <a href="#posts" class="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full text-xs font-semibold shadow-md shadow-emerald-950/40 transition-all flex items-center gap-1.5">
           <i class="fa-solid fa-share-nodes"></i>
           <span>Suivre mon profil</span>
         </a>
@@ -92,11 +98,11 @@
       <aside class="lg:col-span-4 space-y-5">
         
         <!-- Carte Profil -->
-        <div class="bg-zinc-900/90 rounded-3xl border border-zinc-800/90 overflow-hidden shadow-2xl relative">
-          <!-- Bannière sobre dégradé vert sombre -->
-          <div class="h-32 sm:h-36 w-full bg-gradient-to-r from-zinc-900 via-emerald-950 to-zinc-950 relative overflow-hidden">
+        <div class="bg-slate-850 rounded-3xl border border-slate-750 overflow-hidden shadow-xl relative">
+          <!-- Bannière gris ardoise avec légers reflets émeraude -->
+          <div class="h-32 sm:h-36 w-full bg-gradient-to-r from-slate-800 via-slate-750 to-emerald-950/40 relative overflow-hidden">
             <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
-            <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-zinc-950/75 backdrop-blur-md text-xs font-mono text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+            <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-xs font-mono text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
               En alternance
             </div>
@@ -107,15 +113,14 @@
             <div class="flex justify-between items-end -mt-16 mb-4">
               <!-- Avatar avec bague vert émeraude -->
               <div class="p-1 rounded-full story-ring shadow-xl">
-                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-zinc-900 p-1 flex items-center justify-center">
-                  <div class="w-full h-full rounded-full bg-gradient-to-tr from-zinc-800 to-zinc-750 flex items-center justify-center text-3xl font-extrabold text-emerald-400 overflow-hidden border border-zinc-700">
-                    <i class="fa-solid fa-user-astronaut text-4xl text-emerald-400"></i>
-                  </div>
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-slate-850 p-1 flex items-center justify-center">
+                  <!-- Photo professionnelle intégrée -->
+                  <img src="photo_pro.jpg" alt="Ilan OUFELLA" class="w-full h-full rounded-full object-cover border border-slate-700 shadow-inner" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full rounded-full bg-slate-800 flex items-center justify-center text-3xl font-extrabold text-emerald-400\'><i class=\'fa-solid fa-user-tie text-3xl\'></i></div>';" />
                 </div>
               </div>
               <!-- Bouton contact -->
               <div class="flex gap-2 mb-2">
-                <a href="mailto:oufella.ilan@gmail.com" class="px-4 py-2 bg-zinc-800 hover:bg-zinc-750 text-white rounded-xl text-xs font-semibold border border-zinc-700 transition flex items-center gap-1.5">
+                <a href="mailto:oufella.ilan@gmail.com" class="px-4 py-2 bg-slate-800 hover:bg-slate-750 text-white rounded-xl text-xs font-semibold border border-slate-700 transition flex items-center gap-1.5">
                   <i class="fa-solid fa-envelope text-emerald-400"></i> Contact
                 </a>
               </div>
@@ -129,40 +134,40 @@
                   <i class="fa-solid fa-check"></i>
                 </span>
               </div>
-              <p class="text-xs font-mono text-zinc-400">@ilan_oufellapro • 23 ans • Valenton (94)</p>
+              <p class="text-xs font-mono text-slate-400">@ilan_oufellapro • 23 ans • Valenton (94)</p>
             </div>
 
             <!-- Bio -->
-            <div class="text-xs sm:text-sm text-zinc-300 leading-relaxed space-y-2 mb-5">
+            <div class="text-xs sm:text-sm text-slate-300 leading-relaxed space-y-2 mb-5">
               <p>
                 Apprenti <strong>Technicien Support N1/N2 &amp; Systèmes</strong> chez <span class="text-emerald-400 font-semibold">REDTECH</span>.
               </p>
-              <p class="text-zinc-400">
-                Étudiant en <strong>BTS SIO option SISR</strong> à l'<strong>IPSSI Paris 12ème</strong>. Centré sur l'administration Active Directory, la virtualisation VMware, Linux (Debian) et les architectures réseau d'entreprise.
+              <p class="text-slate-300">
+                Étudiant en <strong>BTS SIO option SISR</strong> à l'<strong>IPSSI Paris 12ème</strong>. Spécialisé en administration Active Directory, virtualisation VMware, Linux (Debian) et sécurisation des réseaux d'entreprise.
               </p>
             </div>
 
             <!-- Compteurs -->
-            <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-zinc-950/70 rounded-2xl border border-zinc-850 text-center mb-5">
+            <div class="grid grid-cols-3 gap-2 py-3 px-3 bg-slate-900/80 rounded-2xl border border-slate-750 text-center mb-5">
               <div>
                 <span class="block text-base font-extrabold text-white">2</span>
-                <span class="text-[10px] uppercase font-mono text-zinc-500 tracking-wider">Labs E5</span>
+                <span class="text-[10px] uppercase font-mono text-slate-400 tracking-wider">Labs E5</span>
               </div>
-              <div class="border-x border-zinc-850">
+              <div class="border-x border-slate-750">
                 <span class="block text-base font-extrabold text-emerald-400">1:1</span>
-                <span class="text-[10px] uppercase font-mono text-zinc-500 tracking-wider">Rythme Alt.</span>
+                <span class="text-[10px] uppercase font-mono text-slate-400 tracking-wider">Rythme Alt.</span>
               </div>
               <div>
                 <span class="block text-base font-extrabold text-teal-400">100%</span>
-                <span class="text-[10px] uppercase font-mono text-zinc-500 tracking-wider">Dispo N1/N2</span>
+                <span class="text-[10px] uppercase font-mono text-slate-400 tracking-wider">Dispo N1/N2</span>
               </div>
             </div>
 
             <!-- Infos rapides -->
-            <div class="space-y-2.5 text-xs text-zinc-400 border-t border-zinc-800/80 pt-4">
+            <div class="space-y-2.5 text-xs text-slate-300 border-t border-slate-750 pt-4">
               <div class="flex items-center gap-2.5">
                 <i class="fa-solid fa-briefcase w-4 text-emerald-400"></i>
-                <span>En poste chez <strong class="text-zinc-200">REDTECH</strong></span>
+                <span>En poste chez <strong class="text-white">REDTECH</strong></span>
               </div>
               <div class="flex items-center gap-2.5">
                 <i class="fa-solid fa-graduation-cap w-4 text-emerald-400"></i>
@@ -181,8 +186,8 @@
         </div>
 
         <!-- Story Highlights -->
-        <div class="bg-zinc-900/90 rounded-3xl border border-zinc-800/90 p-5 shadow-xl">
-          <h3 class="text-xs font-mono uppercase tracking-wider text-zinc-400 mb-3 flex items-center justify-between">
+        <div class="bg-slate-850 rounded-3xl border border-slate-750 p-5 shadow-xl">
+          <h3 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3 flex items-center justify-between">
             <span>Highlights &amp; Stories</span>
             <i class="fa-solid fa-circle-nodes text-emerald-400"></i>
           </h3>
@@ -190,70 +195,70 @@
             
             <div class="flex flex-col items-center flex-shrink-0 cursor-pointer group">
               <div class="w-14 h-14 rounded-full p-0.5 story-ring transition-transform group-hover:scale-105">
-                <div class="w-full h-full rounded-full bg-zinc-900 flex items-center justify-center text-emerald-400 text-lg border-2 border-zinc-950">
+                <div class="w-full h-full rounded-full bg-slate-850 flex items-center justify-center text-emerald-400 text-lg border-2 border-slate-900">
                   <i class="fa-brands fa-windows"></i>
                 </div>
               </div>
-              <span class="text-[11px] font-medium text-zinc-300 mt-1.5 group-hover:text-white">ActiveDir</span>
+              <span class="text-[11px] font-medium text-slate-300 mt-1.5 group-hover:text-white">ActiveDir</span>
             </div>
 
             <div class="flex flex-col items-center flex-shrink-0 cursor-pointer group">
               <div class="w-14 h-14 rounded-full p-0.5 story-ring transition-transform group-hover:scale-105">
-                <div class="w-full h-full rounded-full bg-zinc-900 flex items-center justify-center text-emerald-400 text-lg border-2 border-zinc-950">
+                <div class="w-full h-full rounded-full bg-slate-850 flex items-center justify-center text-emerald-400 text-lg border-2 border-slate-900">
                   <i class="fa-brands fa-linux"></i>
                 </div>
               </div>
-              <span class="text-[11px] font-medium text-zinc-300 mt-1.5 group-hover:text-white">Debian CLI</span>
+              <span class="text-[11px] font-medium text-slate-300 mt-1.5 group-hover:text-white">Debian CLI</span>
             </div>
 
             <div class="flex flex-col items-center flex-shrink-0 cursor-pointer group">
               <div class="w-14 h-14 rounded-full p-0.5 story-ring transition-transform group-hover:scale-105">
-                <div class="w-full h-full rounded-full bg-zinc-900 flex items-center justify-center text-emerald-400 text-lg border-2 border-zinc-950">
+                <div class="w-full h-full rounded-full bg-slate-850 flex items-center justify-center text-emerald-400 text-lg border-2 border-slate-900">
                   <i class="fa-solid fa-server"></i>
                 </div>
               </div>
-              <span class="text-[11px] font-medium text-zinc-300 mt-1.5 group-hover:text-white">VMware</span>
+              <span class="text-[11px] font-medium text-slate-300 mt-1.5 group-hover:text-white">VMware</span>
             </div>
 
             <div class="flex flex-col items-center flex-shrink-0 cursor-pointer group">
               <div class="w-14 h-14 rounded-full p-0.5 story-ring transition-transform group-hover:scale-105">
-                <div class="w-full h-full rounded-full bg-zinc-900 flex items-center justify-center text-emerald-400 text-lg border-2 border-zinc-950">
+                <div class="w-full h-full rounded-full bg-slate-850 flex items-center justify-center text-emerald-400 text-lg border-2 border-slate-900">
                   <i class="fa-solid fa-shield-halved"></i>
                 </div>
               </div>
-              <span class="text-[11px] font-medium text-zinc-300 mt-1.5 group-hover:text-white">Sécurité</span>
+              <span class="text-[11px] font-medium text-slate-300 mt-1.5 group-hover:text-white">Sécurité</span>
             </div>
 
             <div class="flex flex-col items-center flex-shrink-0 cursor-pointer group">
               <div class="w-14 h-14 rounded-full p-0.5 story-ring transition-transform group-hover:scale-105">
-                <div class="w-full h-full rounded-full bg-zinc-900 flex items-center justify-center text-emerald-400 text-lg border-2 border-zinc-950">
+                <div class="w-full h-full rounded-full bg-slate-850 flex items-center justify-center text-emerald-400 text-lg border-2 border-slate-900">
                   <i class="fa-solid fa-network-wired"></i>
                 </div>
               </div>
-              <span class="text-[11px] font-medium text-zinc-300 mt-1.5 group-hover:text-white">Réseau</span>
+              <span class="text-[11px] font-medium text-slate-300 mt-1.5 group-hover:text-white">Réseau</span>
             </div>
 
           </div>
         </div>
 
         <!-- Soft Skills -->
-        <div class="bg-zinc-900/90 rounded-3xl border border-zinc-800/90 p-5 shadow-xl space-y-4">
+        <div class="bg-slate-850 rounded-3xl border border-slate-750 p-5 shadow-xl space-y-4">
           <div>
-            <h4 class="text-xs font-mono uppercase tracking-wider text-zinc-400 mb-2">Soft Skills &amp; Terrain</h4>
+            <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Soft Skills &amp; Terrain</h4>
             <div class="flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 bg-zinc-800 text-zinc-300 rounded-lg text-xs font-medium">Sens du service &amp; Pédagogie</span>
-              <span class="px-2.5 py-1 bg-zinc-800 text-zinc-300 rounded-lg text-xs font-medium">Rigueur &amp; Analyse</span>
-              <span class="px-2.5 py-1 bg-zinc-800 text-zinc-300 rounded-lg text-xs font-medium">Gestion du stress</span>
-              <span class="px-2.5 py-1 bg-zinc-800 text-zinc-300 rounded-lg text-xs font-medium">Travail d'équipe</span>
+              <span class="px-2.5 py-1 bg-slate-800 text-slate-200 rounded-lg text-xs font-medium border border-slate-700">Sens du service &amp; Pédagogie</span>
+              <span class="px-2.5 py-1 bg-slate-800 text-slate-200 rounded-lg text-xs font-medium border border-slate-700">Rigueur &amp; Analyse</span>
+              <span class="px-2.5 py-1 bg-slate-800 text-slate-200 rounded-lg text-xs font-medium border border-slate-700">Gestion du stress</span>
+              <span class="px-2.5 py-1 bg-slate-800 text-slate-200 rounded-lg text-xs font-medium border border-slate-700">Travail d'équipe</span>
             </div>
           </div>
-          <div class="border-t border-zinc-800 pt-3">
-            <h4 class="text-xs font-mono uppercase tracking-wider text-zinc-400 mb-2">Centres d'intérêt</h4>
+          <div class="border-t border-slate-750 pt-3">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Centres d'intérêt</h4>
             <div class="flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-800 text-zinc-400 rounded-lg text-xs">⚽ Football &amp; Running</span>
-              <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-800 text-zinc-400 rounded-lg text-xs">🛠️ Montage PC &amp; Hardware</span>
-              <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-800 text-zinc-400 rounded-lg text-xs">🎮 Gaming &amp; Tech</span>
-              <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-800 text-zinc-400 rounded-lg text-xs">📚 Histoire &amp; Cinéma</span>
+              <span class="px-2.5 py-1 bg-slate-900 border border-slate-750 text-slate-300 rounded-lg text-xs">⚽ Football &amp; Running</span>
+              <span class="px-2.5 py-1 bg-slate-900 border border-slate-750 text-slate-300 rounded-lg text-xs">🛠️ Montage PC &amp; Hardware</span>
+              <span class="px-2.5 py-1 bg-slate-900 border border-slate-750 text-slate-300 rounded-lg text-xs">🎮 Gaming &amp; Tech</span>
+              <span class="px-2.5 py-1 bg-slate-900 border border-slate-750 text-slate-300 rounded-lg text-xs">📚 Histoire &amp; Cinéma</span>
             </div>
           </div>
         </div>
@@ -263,21 +268,21 @@
       <!-- ================= Colonne Droite / Flux & Onglets ================= -->
       <section class="lg:col-span-8 space-y-6" id="posts">
 
-        <!-- Onglets -->
-        <div class="bg-zinc-900/90 rounded-2xl border border-zinc-800 p-1.5 flex items-center justify-between text-xs sm:text-sm font-semibold text-zinc-400 shadow-xl overflow-x-auto no-scrollbar">
+        <!-- Onglets Renommés -->
+        <div class="bg-slate-850 rounded-2xl border border-slate-750 p-1.5 flex items-center justify-between text-xs sm:text-sm font-semibold text-slate-300 shadow-xl overflow-x-auto no-scrollbar">
           <button onclick="switchTab('feed')" id="tab-feed" class="px-4 py-2.5 rounded-xl bg-emerald-600 text-white flex items-center gap-2 shadow-md shadow-emerald-950/40 transition whitespace-nowrap">
             <i class="fa-solid fa-cubes"></i>
             <span>Publications &amp; Réalisations E5</span>
           </button>
-          <button onclick="switchTab('skills-tab')" id="tab-skills" class="px-4 py-2.5 rounded-xl hover:text-white hover:bg-zinc-800 transition flex items-center gap-2 whitespace-nowrap">
+          <button onclick="switchTab('skills-tab')" id="tab-skills" class="px-4 py-2.5 rounded-xl hover:text-white hover:bg-slate-800 transition flex items-center gap-2 whitespace-nowrap">
             <i class="fa-solid fa-microchip"></i>
             <span>Stack SISR</span>
           </button>
-          <button onclick="switchTab('company-tab')" id="tab-company" class="px-4 py-2.5 rounded-xl hover:text-white hover:bg-zinc-800 transition flex items-center gap-2 whitespace-nowrap">
-            <i class="fa-solid fa-building"></i>
-            <span>Cadre REDTECH</span>
+          <button onclick="switchTab('company-tab')" id="tab-company" class="px-4 py-2.5 rounded-xl hover:text-white hover:bg-slate-800 transition flex items-center gap-2 whitespace-nowrap">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Parcours Pro &amp; École</span>
           </button>
-          <button onclick="switchTab('veille-tab')" id="tab-veille" class="px-4 py-2.5 rounded-xl hover:text-white hover:bg-zinc-800 transition flex items-center gap-2 whitespace-nowrap">
+          <button onclick="switchTab('veille-tab')" id="tab-veille" class="px-4 py-2.5 rounded-xl hover:text-white hover:bg-slate-800 transition flex items-center gap-2 whitespace-nowrap">
             <i class="fa-solid fa-rss"></i>
             <span>Veille Tech</span>
           </button>
@@ -287,7 +292,7 @@
         <div id="content-feed" class="space-y-6">
 
           <!-- POST ÉPINGLÉ -->
-          <article class="bg-zinc-900/90 rounded-3xl border border-emerald-500/30 p-6 shadow-xl relative overflow-hidden">
+          <article class="bg-slate-850 rounded-3xl border border-emerald-500/30 p-6 shadow-xl relative overflow-hidden">
             <div class="flex items-center gap-2 text-xs font-mono text-emerald-400 mb-3">
               <i class="fa-solid fa-thumbtack"></i>
               <span>PUBLICATION ÉPINGLÉE • OBJECTIF BTS SIO SISR (SESSION 2026-2027)</span>
@@ -302,24 +307,24 @@
                     <span class="font-bold text-white text-sm">Ilan OUFELLA</span>
                     <i class="fa-solid fa-circle-check text-emerald-400 text-xs"></i>
                   </div>
-                  <span class="text-xs text-zinc-500 font-mono">À l'instant • IPSSI Paris 12ème</span>
+                  <span class="text-xs text-slate-400 font-mono">À l'instant • IPSSI Paris 12ème</span>
                 </div>
               </div>
               <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                 Épreuve E5
               </span>
             </div>
-            <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed mb-4">
-              Bienvenue sur mon portfolio de compétences. Conçu sous forme d'espace professionnel, il documente mes ateliers en administration systèmes &amp; réseaux (Windows Server, Linux Debian, VMware) ainsi que mes missions en entreprise chez <strong>REDTECH</strong>.
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+              Bienvenue sur mon portfolio de compétences. Conçu sous forme d'espace professionnel moderne, il documente mes ateliers en administration systèmes &amp; réseaux (Windows Server, Linux Debian, VMware) ainsi que mes missions en alternance chez <strong>REDTECH</strong> et mon apprentissage à l'<strong>IPSSI</strong>.
             </p>
-            <div class="p-3 bg-zinc-950/70 rounded-xl border border-zinc-800 text-xs text-zinc-400 flex items-center justify-between">
+            <div class="p-3 bg-slate-900 rounded-xl border border-slate-750 text-xs text-slate-300 flex items-center justify-between">
               <span>📋 Tableau de synthèse des réalisations professionnelles</span>
               <span class="text-emerald-400 font-mono">Statut : En cours d'alimentation</span>
             </div>
           </article>
 
           <!-- POST PROJET 1 : LAB ACTIVE DIRECTORY -->
-          <article class="bg-zinc-900/90 rounded-3xl border border-zinc-800/90 p-6 shadow-xl hover:border-zinc-750 transition">
+          <article class="bg-slate-850 rounded-3xl border border-slate-750 p-6 shadow-xl hover:border-slate-700 transition">
             <div class="flex items-start justify-between mb-4">
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold">
@@ -328,9 +333,9 @@
                 <div>
                   <div class="flex items-center gap-1.5">
                     <span class="font-bold text-white text-sm">Ilan OUFELLA</span>
-                    <span class="text-xs text-zinc-400 font-normal">a partagé un nouveau projet</span>
+                    <span class="text-xs text-slate-400 font-normal">a partagé un nouveau projet</span>
                   </div>
-                  <span class="text-xs text-zinc-500 font-mono">Lab Virtuel SISR • Windows Server 2022</span>
+                  <span class="text-xs text-slate-400 font-mono">Lab Virtuel SISR • Windows Server 2022</span>
                 </div>
               </div>
               <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
@@ -341,12 +346,12 @@
             <h3 class="text-base sm:text-lg font-bold text-white mb-2">
               Déploiement complet d'un domaine Active Directory &amp; Services d'infrastructure
             </h3>
-            <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed mb-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
               Mise en œuvre d'une infrastructure d'entreprise sous Windows Server 2022 simulant le réseau d'une PME. Centralisation de la gestion des identités, sécurisation des postes clients par stratégies de groupe (GPO) et déploiement de partages de fichiers avec permissions strictes.
             </p>
 
-            <div class="bg-zinc-950 rounded-2xl border border-zinc-800 p-4 mb-4 font-mono text-xs text-zinc-300 space-y-2.5">
-              <div class="flex items-center justify-between border-b border-zinc-850 pb-2 text-zinc-500 text-[11px]">
+            <div class="bg-slate-900 rounded-2xl border border-slate-750 p-4 mb-4 font-mono text-xs text-slate-300 space-y-2.5">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 text-slate-400 text-[11px]">
                 <span><i class="fa-solid fa-diagram-project text-emerald-400 mr-1"></i> ARCHITECTURE &amp; LIVRABLES</span>
                 <span>VMware Workstation Pro</span>
               </div>
@@ -378,7 +383,7 @@
               <span class="text-xs font-mono text-emerald-400">#NTFS</span>
             </div>
 
-            <div class="flex items-center justify-between border-t border-zinc-850 pt-3 text-xs text-zinc-400 font-medium">
+            <div class="flex items-center justify-between border-t border-slate-750 pt-3 text-xs text-slate-400 font-medium">
               <button class="flex items-center gap-1.5 hover:text-emerald-400 transition">
                 <i class="fa-regular fa-thumbs-up"></i>
                 <span>Compétence validée</span>
@@ -387,12 +392,12 @@
                 <i class="fa-solid fa-file-contract"></i>
                 <span>Fiche descriptive prête</span>
               </button>
-              <span class="text-zinc-500 font-mono text-[11px]">Validation E5</span>
+              <span class="text-slate-400 font-mono text-[11px]">Validation E5</span>
             </div>
           </article>
 
           <!-- POST PROJET 2 : LAB LINUX DEBIAN -->
-          <article class="bg-zinc-900/90 rounded-3xl border border-zinc-800/90 p-6 shadow-xl hover:border-zinc-750 transition">
+          <article class="bg-slate-850 rounded-3xl border border-slate-750 p-6 shadow-xl hover:border-slate-700 transition">
             <div class="flex items-start justify-between mb-4">
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold">
@@ -401,9 +406,9 @@
                 <div>
                   <div class="flex items-center gap-1.5">
                     <span class="font-bold text-white text-sm">Ilan OUFELLA</span>
-                    <span class="text-xs text-zinc-400 font-normal">a partagé un nouveau projet</span>
+                    <span class="text-xs text-slate-400 font-normal">a partagé un nouveau projet</span>
                   </div>
-                  <span class="text-xs text-zinc-500 font-mono">Lab Virtuel SISR • Debian 12 Minimal</span>
+                  <span class="text-xs text-slate-400 font-mono">Lab Virtuel SISR • Debian 12 Minimal</span>
                 </div>
               </div>
               <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
@@ -418,8 +423,8 @@
               Installation sans interface graphique d'un serveur Linux Debian 12 en réseau local virtuel. Gestion stricte des privilèges, sécurisation du service SSH et automatisation des opérations d'administration courantes.
             </p>
 
-            <div class="bg-zinc-950 rounded-2xl border border-zinc-800 p-4 mb-4 font-mono text-xs text-zinc-300 space-y-2">
-              <div class="flex items-center justify-between border-b border-zinc-850 pb-2 text-zinc-500 text-[11px]">
+            <div class="bg-slate-900 rounded-2xl border border-slate-750 p-4 mb-4 font-mono text-xs text-slate-300 space-y-2">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 text-slate-400 text-[11px]">
                 <span><i class="fa-solid fa-terminal text-emerald-400 mr-1"></i> ENVIRONNEMENT CLI &amp; SÉCURITÉ</span>
                 <span>SSH &amp; Bash</span>
               </div>
@@ -446,7 +451,7 @@
               <span class="text-xs font-mono text-emerald-400">#SISR</span>
             </div>
 
-            <div class="flex items-center justify-between border-t border-zinc-850 pt-3 text-xs text-zinc-400 font-medium">
+            <div class="flex items-center justify-between border-t border-slate-750 pt-3 text-xs text-slate-400 font-medium">
               <button class="flex items-center gap-1.5 hover:text-emerald-400 transition">
                 <i class="fa-regular fa-thumbs-up"></i>
                 <span>Compétence validée</span>
@@ -455,30 +460,30 @@
                 <i class="fa-solid fa-file-contract"></i>
                 <span>Fiche descriptive prête</span>
               </button>
-              <span class="text-zinc-500 font-mono text-[11px]">Validation E5</span>
+              <span class="text-slate-400 font-mono text-[11px]">Validation E5</span>
             </div>
           </article>
 
           <!-- POST PROJET 3 : EMPLACEMENT ENTREPRISE REDTECH -->
-          <article class="bg-zinc-900/60 rounded-3xl border border-dashed border-zinc-800 p-6 shadow-xl relative">
+          <article class="bg-slate-850/60 rounded-3xl border border-dashed border-slate-700 p-6 shadow-xl relative">
             <div class="flex items-center justify-between mb-4">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-zinc-400 font-bold">
+                <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 font-bold border border-slate-700">
                   <i class="fa-solid fa-building text-base"></i>
                 </div>
                 <div>
                   <h4 class="font-bold text-white text-sm">Projet Entreprise (REDTECH)</h4>
-                  <span class="text-xs text-zinc-500 font-mono">En cours d'élaboration • Alternance 2026-2027</span>
+                  <span class="text-xs text-slate-400 font-mono">En cours d'élaboration • Alternance 2026-2027</span>
                 </div>
               </div>
-              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-zinc-800 text-zinc-400">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-slate-800 text-slate-300 border border-slate-700">
                 PROJET E5 - #03
               </span>
             </div>
-            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-4">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
               Cet emplacement est réservé pour le projet professionnel en situation réelle au sein de <strong>REDTECH</strong> (déploiement d'infrastructure, gestion des tickets N1/N2 ou sécurisation des accès).
             </p>
-            <div class="p-4 bg-zinc-950/80 rounded-2xl border border-zinc-850 text-xs text-zinc-400 flex items-center gap-3">
+            <div class="p-4 bg-slate-900 rounded-2xl border border-slate-750 text-xs text-slate-300 flex items-center gap-3">
               <i class="fa-solid fa-clock-rotate-left text-emerald-400 text-lg"></i>
               <span>Ce volet sera documenté dès que le contexte technique de REDTECH sera précisé.</span>
             </div>
@@ -488,57 +493,57 @@
 
         <!-- ZONE 2 : ONGLET STACK TECHNIQUE -->
         <div id="content-skills" class="hidden space-y-6">
-          <div class="bg-zinc-900/90 rounded-3xl border border-zinc-800 p-6 shadow-xl">
+          <div class="bg-slate-850 rounded-3xl border border-slate-750 p-6 shadow-xl">
             <h3 class="text-lg font-bold text-white mb-2">Matrice de compétences SISR</h3>
-            <p class="text-xs text-zinc-400 mb-6">Référentiel des compétences mobilisées pour l'administration et le support informatique.</p>
+            <p class="text-xs text-slate-400 mb-6">Référentiel des compétences mobilisées pour l'administration et le support informatique.</p>
             
             <div class="space-y-6">
               <div class="space-y-2">
                 <div class="flex justify-between text-xs font-semibold">
-                  <span class="text-zinc-200">Administration Windows (Active Directory, GPO, Server 2022, Win 10/11)</span>
+                  <span class="text-slate-200">Administration Windows (Active Directory, GPO, Server 2022, Win 10/11)</span>
                   <span class="text-emerald-400 font-mono">Avancé</span>
                 </div>
-                <div class="w-full h-2 bg-zinc-950 rounded-full overflow-hidden">
+                <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden">
                   <div class="h-full bg-emerald-500 rounded-full w-[85%]"></div>
                 </div>
               </div>
 
               <div class="space-y-2">
                 <div class="flex justify-between text-xs font-semibold">
-                  <span class="text-zinc-200">Virtualisation (VMware Workstation, dimensionnement, réseaux virtuels)</span>
+                  <span class="text-slate-200">Virtualisation (VMware Workstation, dimensionnement, réseaux virtuels)</span>
                   <span class="text-emerald-400 font-mono">Intermédiaire / Avancé</span>
                 </div>
-                <div class="w-full h-2 bg-zinc-950 rounded-full overflow-hidden">
+                <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden">
                   <div class="h-full bg-emerald-600 rounded-full w-[80%]"></div>
                 </div>
               </div>
 
               <div class="space-y-2">
                 <div class="flex justify-between text-xs font-semibold">
-                  <span class="text-zinc-200">Administration Linux Debian (CLI, gestion paquets, permissions)</span>
+                  <span class="text-slate-200">Administration Linux Debian (CLI, gestion paquets, permissions)</span>
                   <span class="text-emerald-400 font-mono">Opérationnel</span>
                 </div>
-                <div class="w-full h-2 bg-zinc-950 rounded-full overflow-hidden">
+                <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden">
                   <div class="h-full bg-teal-500 rounded-full w-[70%]"></div>
                 </div>
               </div>
 
               <div class="space-y-2">
                 <div class="flex justify-between text-xs font-semibold">
-                  <span class="text-zinc-200">Réseaux &amp; Services (DNS, DHCP, adressage IP, diagnostic réseau)</span>
+                  <span class="text-slate-200">Réseaux &amp; Services (DNS, DHCP, adressage IP, diagnostic réseau)</span>
                   <span class="text-emerald-400 font-mono">Opérationnel</span>
                 </div>
-                <div class="w-full h-2 bg-zinc-950 rounded-full overflow-hidden">
+                <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden">
                   <div class="h-full bg-emerald-400 rounded-full w-[75%]"></div>
                 </div>
               </div>
 
               <div class="space-y-2">
                 <div class="flex justify-between text-xs font-semibold">
-                  <span class="text-zinc-200">Support Technique N1 &amp; N2 (Résolution d'incidents, gestion des urgences)</span>
+                  <span class="text-slate-200">Support Technique N1 &amp; N2 (Résolution d'incidents, gestion des urgences)</span>
                   <span class="text-emerald-400 font-mono">Expert terrain</span>
                 </div>
-                <div class="w-full h-2 bg-zinc-950 rounded-full overflow-hidden">
+                <div class="w-full h-2 bg-slate-900 rounded-full overflow-hidden">
                   <div class="h-full bg-teal-400 rounded-full w-[90%]"></div>
                 </div>
               </div>
@@ -546,40 +551,42 @@
           </div>
         </div>
 
-        <!-- ZONE 3 : ONGLET CADRE REDTECH -->
+        <!-- ZONE 3 : ONGLET PARCOURS PRO & ÉCOLE (ENTREPRISE + ÉCOLE) -->
         <div id="content-company" class="hidden space-y-6">
-          <div class="bg-zinc-900/90 rounded-3xl border border-zinc-800 p-6 shadow-xl">
+
+          <!-- Carte 1 : Entreprise REDTECH -->
+          <div class="bg-slate-850 rounded-3xl border border-slate-750 p-6 shadow-xl">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl font-bold border border-emerald-500/20">
                 <i class="fa-solid fa-building-user"></i>
               </div>
               <div>
                 <h3 class="text-lg font-bold text-white">REDTECH — Organisation &amp; Missions</h3>
-                <span class="text-xs text-emerald-400 font-mono">Contrat d'Apprentissage (1 sem. école / 1 sem. entreprise)</span>
+                <span class="text-xs text-emerald-400 font-mono">Alternance • 1 semaine formation / 1 semaine entreprise</span>
               </div>
             </div>
 
-            <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed mb-6">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
               Au sein de l'entreprise <strong>REDTECH</strong>, j'occupe les fonctions d'apprenti <strong>Technicien Support Informatique N1 et N2</strong>. Mes missions s'articulent autour de l'accompagnement des utilisateurs et de la disponibilité du parc technique.
             </p>
 
             <div class="grid sm:grid-cols-2 gap-4">
-              <div class="p-4 bg-zinc-950 rounded-2xl border border-zinc-850">
+              <div class="p-4 bg-slate-900 rounded-2xl border border-slate-750">
                 <h4 class="font-bold text-white text-xs mb-2 flex items-center gap-2">
                   <i class="fa-solid fa-headset text-emerald-400"></i> Support Utilisateurs N1 &amp; N2
                 </h4>
-                <ul class="text-xs text-zinc-400 space-y-1.5">
+                <ul class="text-xs text-slate-300 space-y-1.5">
                   <li>• Qualification des demandes &amp; tickets d'incidents</li>
                   <li>• Télé-assistance et diagnostic poste client</li>
                   <li>• Dépannage matériel, OS Windows et applicatifs</li>
                 </ul>
               </div>
 
-              <div class="p-4 bg-zinc-950 rounded-2xl border border-zinc-850">
+              <div class="p-4 bg-slate-900 rounded-2xl border border-slate-750">
                 <h4 class="font-bold text-white text-xs mb-2 flex items-center gap-2">
                   <i class="fa-solid fa-gears text-emerald-400"></i> Exploitation &amp; Maintenance
                 </h4>
-                <ul class="text-xs text-zinc-400 space-y-1.5">
+                <ul class="text-xs text-slate-300 space-y-1.5">
                   <li>• Préparation et déploiement de postes de travail</li>
                   <li>• Gestion des comptes et habilitations d'accès</li>
                   <li>• Rédaction de documentations techniques</li>
@@ -587,48 +594,91 @@
               </div>
             </div>
           </div>
+
+          <!-- Carte 2 : Formation & École (IPSSI Paris 12) -->
+          <div class="bg-slate-850 rounded-3xl border border-slate-750 p-6 shadow-xl">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl font-bold border border-teal-500/20">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white">IPSSI Paris 12ème — École d'Informatique &amp; Cybersécurité</h3>
+                <span class="text-xs text-teal-400 font-mono">BTS SIO Option SISR • Session 2026-2027</span>
+              </div>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+              L'<strong>IPSSI</strong> (Grande école d'informatique, Web et Digital Business) dispense une formation technique exigeante et professionnalisante. Le cursus BTS SIO option SISR forme aux compétences fondamentales de l'administrateur systèmes, réseaux et cloud.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="p-4 bg-slate-900 rounded-2xl border border-slate-750">
+                <h4 class="font-bold text-white text-xs mb-2 flex items-center gap-2">
+                  <i class="fa-solid fa-book-open text-teal-400"></i> Pôles d'enseignement SISR
+                </h4>
+                <ul class="text-xs text-slate-300 space-y-1.5">
+                  <li>• Administration systèmes (Windows Server, Linux)</li>
+                  <li>• Conception et maintenance de réseaux d'entreprise</li>
+                  <li>• Cybersécurité, durcissement et gestion des risques</li>
+                  <li>• Virtualisation de serveurs et initiation Cloud</li>
+                </ul>
+              </div>
+
+              <div class="p-4 bg-slate-900 rounded-2xl border border-slate-750">
+                <h4 class="font-bold text-white text-xs mb-2 flex items-center gap-2">
+                  <i class="fa-solid fa-timeline text-teal-400"></i> Historique académique
+                </h4>
+                <ul class="text-xs text-slate-300 space-y-1.5">
+                  <li>• <strong>2026-2027 :</strong> IPSSI Paris 12e (Deuxième année BTS SISR)</li>
+                  <li>• <strong>2025-2026 :</strong> Institut F2I Vincennes (Première année BTS SIO)</li>
+                  <li>• <strong>2024 :</strong> Aston École IT Arcueil (Bootcamp BTS CIEL)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- ZONE 4 : ONGLET VEILLE TECHNOLOGIQUE -->
         <div id="content-veille" class="hidden space-y-6">
-          <div class="bg-zinc-900/90 rounded-3xl border border-zinc-800 p-6 shadow-xl space-y-6">
+          <div class="bg-slate-850 rounded-3xl border border-slate-750 p-6 shadow-xl space-y-6">
             <div>
               <div class="flex items-center gap-2 text-xs font-mono text-emerald-400 mb-2">
                 <i class="fa-solid fa-satellite-dish"></i>
                 <span>SUIVI &amp; CURATION D'INFORMATION</span>
               </div>
               <h3 class="text-lg font-bold text-white">Veille Technologique &amp; Stratégique</h3>
-              <p class="text-xs sm:text-sm text-zinc-300 mt-2 leading-relaxed">
+              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
                 Méthodologie structurée d'observation et d'analyse des évolutions technologiques liée au domaine des systèmes, réseaux et de la cybersécurité.
               </p>
             </div>
 
             <!-- Focus Thématique -->
-            <div class="p-5 bg-gradient-to-br from-emerald-950/30 via-zinc-950 to-zinc-950 rounded-2xl border border-emerald-500/30">
+            <div class="p-5 bg-gradient-to-br from-emerald-950/30 via-slate-900 to-slate-900 rounded-2xl border border-emerald-500/30">
               <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[11px] font-mono font-semibold border border-emerald-500/30">
                 Thématique Principale
               </span>
               <h4 class="text-sm font-bold text-white mt-2 mb-2">
                 Sécurisation des annuaires Active Directory face aux cyberattaques modernes
               </h4>
-              <p class="text-xs text-zinc-400 leading-relaxed">
+              <p class="text-xs text-slate-300 leading-relaxed">
                 Surveillance continue des vulnérabilités touchant les contrôleurs de domaine, mécanismes d'attaques par élévation de privilèges (Pass-The-Hash, abus de Kerberos) et application des architectures à moindre privilège (Tiering Model, Windows LAPS).
               </p>
             </div>
 
             <!-- Outils de la veille -->
             <div class="grid sm:grid-cols-3 gap-3">
-              <div class="p-3 bg-zinc-950 rounded-xl border border-zinc-850">
+              <div class="p-3 bg-slate-900 rounded-xl border border-slate-750">
                 <span class="text-xs font-bold text-emerald-400 block mb-1">Sources</span>
-                <p class="text-[11px] text-zinc-400">CERT-FR / ANSSI, ZDNet, blogs Microsoft Security, LeMagIT.</p>
+                <p class="text-[11px] text-slate-300">CERT-FR / ANSSI, ZDNet, blogs Microsoft Security, LeMagIT.</p>
               </div>
-              <div class="p-3 bg-zinc-950 rounded-xl border border-zinc-850">
+              <div class="p-3 bg-slate-900 rounded-xl border border-slate-750">
                 <span class="text-xs font-bold text-emerald-400 block mb-1">Outils</span>
-                <p class="text-[11px] text-zinc-400">Flux RSS Feedly, Google Alerts, newsletters spécialisées.</p>
+                <p class="text-[11px] text-slate-300">Flux RSS Feedly, Google Alerts, newsletters spécialisées.</p>
               </div>
-              <div class="p-3 bg-zinc-950 rounded-xl border border-zinc-850">
+              <div class="p-3 bg-slate-900 rounded-xl border border-slate-750">
                 <span class="text-xs font-bold text-emerald-400 block mb-1">Restitution</span>
-                <p class="text-[11px] text-zinc-400">Fiches de synthèse Notion et veille partagée en équipe.</p>
+                <p class="text-[11px] text-slate-300">Fiches de synthèse Notion et veille partagée en équipe.</p>
               </div>
             </div>
           </div>
@@ -640,13 +690,13 @@
   </div>
 
   <!-- Footer -->
-  <footer class="mt-16 py-8 border-t border-zinc-900 bg-zinc-950 text-center text-xs text-zinc-500 font-mono">
+  <footer class="mt-16 py-8 border-t border-slate-800 bg-slate-900 text-center text-xs text-slate-400 font-mono">
     <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
         <span>Ilan OUFELLA • Portfolio BTS SIO SISR • Épreuve E5</span>
       </div>
-      <div class="flex gap-4 text-zinc-400">
+      <div class="flex gap-4 text-slate-300">
         <a href="mailto:oufella.ilan@gmail.com" class="hover:text-white transition">Email</a>
         <a href="tel:0752887624" class="hover:text-white transition">Téléphone</a>
         <a href="#posts" class="hover:text-white transition">Haut de page</a>
@@ -665,7 +715,7 @@
       const buttons = ['tab-feed', 'tab-skills', 'tab-company', 'tab-veille'];
       buttons.forEach(btnId => {
         const btn = document.getElementById(btnId);
-        btn.className = "px-4 py-2.5 rounded-xl hover:text-white hover:bg-zinc-800 transition flex items-center gap-2 whitespace-nowrap text-zinc-400";
+        btn.className = "px-4 py-2.5 rounded-xl hover:text-white hover:bg-slate-800 transition flex items-center gap-2 whitespace-nowrap text-slate-300";
       });
 
       if (tabName === 'feed') {
